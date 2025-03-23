@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/argargargtbn01/helm-chart.git
-    targetRevision: main
+    targetRevision: HEAD
     path: KLTN/argocd-config
     directory:
       recurse: true
