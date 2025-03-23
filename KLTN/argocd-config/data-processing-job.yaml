@@ -7,7 +7,7 @@ spec:
   project: default
   sources:
     - repoURL: https://github.com/argargargtbn01/helm-chart.git
-      targetRevision: main
+      targetRevision: 0.1.0
       chart: KLTN
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
