@@ -9,6 +9,7 @@ spec:
     - repoURL: https://github.com/argargargtbn01/helm-chart.git
       targetRevision: main
       path: KLTN
+      chart: KLTN
       helm:
         valueFiles:
           - $values/values.yaml
