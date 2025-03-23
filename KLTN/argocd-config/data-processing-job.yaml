@@ -8,10 +8,14 @@ spec:
   sources:
     - repoURL: https://github.com/argargargtbn01/helm-chart.git
       targetRevision: main
-      path: KLTN/
+      path: KLTN
+      helm:
+        valueFiles:
+          - $values/values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
       path: data-processing-job/values.yaml
+      ref: values
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
