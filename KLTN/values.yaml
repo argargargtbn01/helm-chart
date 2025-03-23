@@ -1,29 +1,32 @@
-# # Giá trị mặc định cho chart linh hoạt
-# replicaCount: 1
+# Giá trị mặc định cho chart linh hoạt
+replicaCount: 1
 
-# image:
-#   repository: ""
-#   pullPolicy: IfNotPresent
-#   tag: "latest"
+image:
+  repository: ""
+  pullPolicy: IfNotPresent
+  tag: "latest"
 
-# service:
-#   enabled: true
-#   type: NodePort
-#   port: 80
-#   targetPort: 80
-#   nodePort: 30000
+service:
+  enabled: true
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30000
 
-# resources:
-#   limits:
-#     cpu: "200m"
-#     memory: "256Mi"
-#   requests:
-#     cpu: "100m"
-#     memory: "128Mi"
+resources:
+  limits:
+    cpu: "200m"
+    memory: "256Mi"
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
 
-# serviceAccount:
-#   create: true
-#   name: ""
+serviceAccount:
+  create: true
+  name: ""
 
-# autoscaling:
-#   enabled: false
+ingress:
+  enabled: false
+
+autoscaling:
+  enabled: false
