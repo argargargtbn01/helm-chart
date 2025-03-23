@@ -11,7 +11,7 @@ spec:
       chart: KLTN
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: HEAD
-      ref: data-processing-job/values.yaml
+      path: data-processing-job/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
