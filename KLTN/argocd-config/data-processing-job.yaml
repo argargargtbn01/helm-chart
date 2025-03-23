@@ -11,10 +11,11 @@ spec:
       path: KLTN
       helm:
         valueFiles:
-          - values.yaml
+          - $values/values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
-      path: data-processing-job/values.yaml
+      path: data-processing-job
+      ref: values
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
