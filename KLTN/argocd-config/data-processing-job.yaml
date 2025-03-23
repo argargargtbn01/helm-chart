@@ -7,8 +7,11 @@ spec:
   project: default
   sources:
     - repoURL: https://github.com/argargargtbn01/helm-chart.git
-      targetRevision: 0.1.0
-      chart: KLTN
+      targetRevision: main
+      path: KLTN
+      helm:
+        valueFiles:
+          - values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
       path: data-processing-job/values.yaml
