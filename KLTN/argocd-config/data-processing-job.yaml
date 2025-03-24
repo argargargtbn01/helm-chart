@@ -11,7 +11,7 @@ spec:
       path: KLTN
       helm:
         valueFiles:
-          - https://github.com/argargargtbn01/helm-value/blob/main/data-processing-job/values.yaml
+          - https://github.com/argargargtbn01/helm-value/raw/main/data-processing-job/values.yaml
       # helm:
       #   valueFiles:
       #     - $values/values.yaml
