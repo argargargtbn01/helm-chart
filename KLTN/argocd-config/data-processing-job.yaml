@@ -9,15 +9,14 @@ spec:
     - repoURL: https://github.com/argargargtbn01/helm-chart.git
       targetRevision: main
       path: KLTN
-      helm:
-        valueFiles:
-          - https://github.com/argargargtbn01/helm-value/raw/main/data-processing-job/values.yaml
-      # helm: 
+      # helm:
       #   valueFiles:
-      #     - $values/values.yaml
+      #     - https://github.com/argargargtbn01/helm-value/raw/main/data-processing-job/values.yaml
+      helm: 
+        valueFiles:
+          - $values/data-processing-job/values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
-      path: data-processing-job
       ref: values
   destination:
     server: https://kubernetes.default.svc
