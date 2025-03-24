@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: data-processing-job
+  name: data-hub
   namespace: argocd
 spec:
   project: default
@@ -11,7 +11,7 @@ spec:
       path: KLTN
       helm: 
         valueFiles:
-          - $values/data-processing-job/values.yaml
+          - $values/data-hub/values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
       ref: values
