@@ -12,7 +12,7 @@ spec:
       helm:
         valueFiles:
           - https://github.com/argargargtbn01/helm-value/raw/main/data-processing-job/values.yaml
-      # helm:
+      # helm: 
       #   valueFiles:
       #     - $values/values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
