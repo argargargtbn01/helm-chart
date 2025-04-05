@@ -9,12 +9,11 @@ spec:
     - repoURL: https://github.com/argargargtbn01/helm-chart.git
       targetRevision: main
       path: KLTN
-      helm:
+      helm: 
         valueFiles:
-          - $values/values.yaml
+          - $values/mos-be/values.yaml
     - repoURL: https://github.com/argargargtbn01/helm-value.git
       targetRevision: main
-      path: mos-be
       ref: values
   destination:
     server: https://kubernetes.default.svc
