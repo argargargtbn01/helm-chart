@@ -1,24 +1,24 @@
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: mos-fe
-#   namespace: argocd
-# spec:
-#   project: default
-#   sources:
-#     - repoURL: https://github.com/argargargtbn01/helm-chart.git
-#       targetRevision: main
-#       path: KLTN
-#       helm: 
-#         valueFiles:
-#           - $values/mos-fe/values.yaml
-#     - repoURL: https://github.com/argargargtbn01/helm-value.git
-#       targetRevision: main
-#       ref: values
-#   destination:
-#     server: https://kubernetes.default.svc
-#     namespace: argocd
-#   syncPolicy:
-#     automated:
-#       prune: true
-#       selfHeal: true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mos-fe
+  namespace: argocd
+spec:
+  project: default
+  sources:
+    - repoURL: https://github.com/argargargtbn01/helm-chart.git
+      targetRevision: main
+      path: KLTN
+      helm: 
+        valueFiles:
+          - $values/mos-fe/values.yaml
+    - repoURL: https://github.com/argargargtbn01/helm-value.git
+      targetRevision: main
+      ref: values
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
